@@ -1,0 +1,99 @@
+<!--Chotika Luangorachorn 5810404928 sec 1-->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.View">
+   <children>
+      <TabPane prefHeight="300.0" prefWidth="406.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Book Store">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="searchField" layoutX="153.0" layoutY="13.0" prefHeight="25.0" prefWidth="163.0" />
+                        <Button fx:id="goBtn" layoutX="316.0" layoutY="13.0" mnemonicParsing="false" onAction="#search" text="Go" />
+                        <Label layoutX="10.0" layoutY="13.0" text="Search: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="searchType" layoutX="67.0" layoutY="13.0" prefHeight="25.0" prefWidth="86.0" />
+                        <Label layoutX="10.0" layoutY="45.0" text="Found:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="countBook" layoutX="67.0" layoutY="45.0" text="0 Book">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="bookArea" editable="false" layoutX="14.0" layoutY="80.0" prefHeight="177.0" prefWidth="377.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+          <Tab text="Add Book">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="nameBookText" layoutX="156.0" layoutY="41.0" prefHeight="25.0" prefWidth="163.0" />
+                        <Button fx:id="addBookBtn" layoutX="187.0" layoutY="161.0" mnemonicParsing="false" onAction="#addBook" text="Add" />
+                        <Label layoutX="84.0" layoutY="41.0" text="Name:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="84.0" layoutY="79.0" text="Amount:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="amountBookText" layoutX="156.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" text="0" />
+                        <TextField fx:id="priceBookText" layoutX="156.0" layoutY="121.0" prefHeight="25.0" prefWidth="70.0" text="0.00" />
+                        <Label layoutX="84.0" layoutY="121.0" text="Price:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="236.0" layoutY="79.0" text="Book">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="237.0" layoutY="121.0" text="Baht">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="83.0" layoutY="208.0" text="Status:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="addStatus" layoutX="156.0" layoutY="208.0" text="name-Success">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="138.0" layoutY="8.0" text="Add Book to Store">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
