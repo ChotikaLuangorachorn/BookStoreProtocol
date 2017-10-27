@@ -12,7 +12,7 @@ public class Server {
         new Thread(() -> {
             ServerSocket serverSocket = null;
             try {
-                serverSocket = new ServerSocket(4929);
+                serverSocket = new ServerSocket(4928);
                 while (true){
                     Socket socket = serverSocket.accept();
                     new Thread(new HandleClient(socket, books)).start();
@@ -99,6 +99,11 @@ public class Server {
                     }
                 }
             }
+            if (countBook!=0){
+                outputToClient.writeUTF(ResponseStatus.S200);
+            }else {
+                outputToClient.writeUTF(ResponseStatus.S404);
+            }
             outputToClient.writeUTF(countBook + "");
             outputToClient.writeUTF(text);
         }
@@ -119,15 +124,18 @@ public class Server {
                     }
                 }
                 if (checkDuplicate){
-                    outputToClient.writeUTF("duplicate");
+//                    outputToClient.writeUTF("duplicate");
+                    outputToClient.writeUTF(ResponseStatus.S406);
                 }
                 else{
-                    books.insertToDB(new Book(name,amount,price));
-                    outputToClient.writeUTF("success");
+                    Book b = new Book(name,amount,price);
+                    books.insertToDB(b);
+//                    outputToClient.writeUTF("success");
+                    outputToClient.writeUTF(ResponseStatus.S201);
                 }
             }
             else{
-                outputToClient.writeUTF("error");
+                outputToClient.writeUTF(ResponseStatus.S400);
             }
 
         }

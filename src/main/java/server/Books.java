@@ -33,8 +33,6 @@ public class Books {
                     String name = result.getString(1);
                     int amount = Integer.parseInt(result.getString(2));
                     float price = Float.parseFloat(result.getString(3));
-                    System.out.println(name+" "+amount+" "+price);
-
                     books.add(new server.Book(name, amount, price));
                 }
                 conn.close();
@@ -61,7 +59,7 @@ public class Books {
                     System.out.println("adding book to DB...");
                     books.add(book);
                 }catch (SQLException ex){
-                    System.out.println("adding errer");}
+                    System.out.println("adding error");}
                 conn.close();
             }
         } catch (ClassNotFoundException ex) {

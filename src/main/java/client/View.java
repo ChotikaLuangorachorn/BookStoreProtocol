@@ -31,18 +31,20 @@ public class View implements Initializable{
     private DataInputStream fromServer;
     private DataOutputStream toServer;
     private Socket socket;
+    private int portNum = 4928;
 
     public void initialize(URL location, ResourceBundle resources) {
         ObservableList<String> types = FXCollections.observableArrayList("Name","Amount","Price");
         searchType.setValue("Name");
         searchType.setItems(types);
         try {
-            socket = new Socket("127.0.0.1", 4929);
+            socket = new Socket("127.0.0.1", portNum);
             fromServer = new DataInputStream(socket.getInputStream());
             toServer = new DataOutputStream(socket.getOutputStream());
             toServer.writeUTF("search,,");
             toServer.flush();
             bookArea.clear();
+            String codeStatus = fromServer.readUTF();
             countBook.setText(fromServer.readUTF()+" book");
             bookArea.appendText(fromServer.readUTF());
             socket.close();
@@ -52,19 +54,21 @@ public class View implements Initializable{
 
     }
     public void search(ActionEvent event) throws IOException {
-        socket = new Socket("127.0.0.1", 4929);
+        socket = new Socket("127.0.0.1", portNum);
         fromServer = new DataInputStream(socket.getInputStream());
         toServer = new DataOutputStream(socket.getOutputStream());
         System.out.println("Searching ... ");
         toServer.writeUTF("search,"+searchType.getValue().toString()+","+searchField.getText());
         toServer.flush();
         bookArea.clear();
+        String codeStatus = fromServer.readUTF();
+        System.out.println("response status: "+ codeStatus);
         countBook.setText(fromServer.readUTF()+" book");
         bookArea.appendText(fromServer.readUTF());
         socket.close();
         }
     public void addBook(ActionEvent event) throws IOException {
-        socket = new Socket("127.0.0.1", 4929);
+        socket = new Socket("127.0.0.1", portNum);
         fromServer = new DataInputStream(socket.getInputStream());
         toServer = new DataOutputStream(socket.getOutputStream());
         System.out.println("Adding book ...");
@@ -73,13 +77,16 @@ public class View implements Initializable{
         String price = priceBookText.getText();
         toServer.writeUTF("add,"+ name +","+amount+","+price);
         toServer.flush();
-        String msgFromServer = fromServer.readUTF();
-        if (msgFromServer.equals("duplicate")){
+        String codeStatus = fromServer.readUTF();
+        System.out.println("response status: "+ codeStatus);
+        if (codeStatus.contains("406")){
             addStatus.setText(name + " - duplicate");
-        }else if (msgFromServer.equals("error")){
+        }else if (codeStatus.contains("400")){
             addStatus.setText(name + " - can't add to store.");
-        }else if (msgFromServer.equals("success")){
+        }else if (codeStatus.contains("201")){
             addStatus.setText(name + " - add to store success.");
+            this.searchField.setText("");
+            search(new ActionEvent());
         }
         socket.close();
 
