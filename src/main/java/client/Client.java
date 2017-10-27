@@ -16,7 +16,7 @@ public class Client extends Application{
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        System.out.println("Client Open ...");
+        System.out.println("Client start connect ... ");
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/app.fxml"));
         Parent root = loader.load();

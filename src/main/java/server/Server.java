@@ -48,17 +48,16 @@ public class Server {
                 outputToClient = new DataOutputStream(socket.getOutputStream());
                 while (true) {
                         String msg = inputFromClient.readUTF();
-                        System.out.println("input--> " + msg);
-                        if (msg.split(",",2)[0].equals("search")) {
+                        if (msg.split(",",2)[0].equals("SEARCH")) {
                             searchBook(msg);
                          }
-                         else if(msg.split(",",2)[0].equals("add")){
+                         else if(msg.split(",",2)[0].equals("ADD")){
                             addBook(msg);
                         }
                         outputToClient.writeUTF("");
                 }
             } catch (IOException e) {
-                System.out.println("Client Close ...");
+                System.out.println("Client not Request");
             }
 
         }
@@ -68,7 +67,6 @@ public class Server {
             String[] input = msg.split(",", 3);
             type = input[1];
             search = input[2].toLowerCase();
-            System.out.println("type: " + type + " search: " + search);
 
             String text = "";
             int countBook = 0;

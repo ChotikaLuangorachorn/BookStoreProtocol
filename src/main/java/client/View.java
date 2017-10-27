@@ -41,7 +41,7 @@ public class View implements Initializable{
             socket = new Socket("127.0.0.1", portNum);
             fromServer = new DataInputStream(socket.getInputStream());
             toServer = new DataOutputStream(socket.getOutputStream());
-            toServer.writeUTF("search,,");
+            toServer.writeUTF("SEARCH,,");
             toServer.flush();
             bookArea.clear();
             String codeStatus = fromServer.readUTF();
@@ -58,7 +58,7 @@ public class View implements Initializable{
         fromServer = new DataInputStream(socket.getInputStream());
         toServer = new DataOutputStream(socket.getOutputStream());
         System.out.println("Searching ... ");
-        toServer.writeUTF("search,"+searchType.getValue().toString()+","+searchField.getText());
+        toServer.writeUTF("SEARCH,"+searchType.getValue().toString()+","+searchField.getText());
         toServer.flush();
         bookArea.clear();
         String codeStatus = fromServer.readUTF();
@@ -75,7 +75,7 @@ public class View implements Initializable{
         String name = nameBookText.getText();
         String amount = amountBookText.getText();
         String price = priceBookText.getText();
-        toServer.writeUTF("add,"+ name +","+amount+","+price);
+        toServer.writeUTF("ADD,"+ name +","+amount+","+price);
         toServer.flush();
         String codeStatus = fromServer.readUTF();
         System.out.println("response status: "+ codeStatus);
