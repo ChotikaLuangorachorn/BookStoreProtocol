@@ -7,24 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acfb83a3-3032-4373-85b1-858a7c7b5d44" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/bookStoreClient/app.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/bookStoreClient/client/Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/bookStoreClient/client/View.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/bookStoreClient/server/Book.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/bookStoreClient/server/Books.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/bookStoreClient/server/Server$HandleClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/bookStoreClient/server/Server.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/bookStoreClient/sqlite-jdbc-3.20.0.jar" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ResponseStatus.java" afterPath="$PROJECT_DIR$/src/main/java/server/ResponseStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/client/View.class" afterPath="$PROJECT_DIR$/target/classes/client/View.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/server/Books.class" afterPath="$PROJECT_DIR$/target/classes/server/Books.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/server/Server$HandleClient.class" afterPath="$PROJECT_DIR$/target/classes/server/Server$HandleClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/server/Server.class" afterPath="$PROJECT_DIR$/target/classes/server/Server.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bookstore.db" afterPath="$PROJECT_DIR$/bookstore.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/client/View.java" afterPath="$PROJECT_DIR$/src/main/java/client/View.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/Books.java" afterPath="$PROJECT_DIR$/src/main/java/server/Books.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/Server.java" afterPath="$PROJECT_DIR$/src/main/java/server/Server.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -211,7 +194,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="196" />
     <option name="y" value="17" />
     <option name="width" value="1002" />
@@ -251,6 +234,29 @@
               <item name="protocol" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="protocol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="protocol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="protocol" type="b2602c69:ProjectViewProjectNode" />
+              <item name="protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="protocol" type="b2602c69:ProjectViewProjectNode" />
@@ -459,23 +465,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22861843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22861843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23600605" sideWeight="0.82528734" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23600605" sideWeight="0.82528734" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42857143" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -767,38 +772,38 @@
         <state relative-caret-position="-969">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1509118708665" expanded="true" signature="60631:60656" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60631:60678" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60631:60712" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60631:60732" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60631:60747" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60681:61202" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60681:61217" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60797:61124" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60816:61109" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60911:61089" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60951:61055" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60972:61033" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="61175:61440" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="61194:61425" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="61227:61405" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="61267:61371" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="61288:61349" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="61483:61789" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="61502:61774" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="61576:61754" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="61616:61720" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="61637:61698" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60681:60797" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60681:60782" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60681:60762" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60681:60728" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60681:60706" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60849:61188" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60868:61173" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="60975:61153" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="61015:61119" ph="..." />
-            <marker date="1509118708665" expanded="true" signature="61036:61097" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="60631:60656" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="60631:60678" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="60631:60712" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="60631:60732" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="60631:60747" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="59455:59976" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="59455:59991" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="60797:61124" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="60816:61109" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="60911:61089" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="60951:61055" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="60972:61033" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="61175:61440" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="61194:61425" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="61227:61405" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="61267:61371" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="61288:61349" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="61483:61789" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="61502:61774" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="61576:61754" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="61616:61720" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="61637:61698" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="59455:59571" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="59455:59556" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="59455:59536" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="59455:59502" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="59455:59480" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="59623:59962" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="59642:59947" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="59749:59927" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="59789:59893" ph="..." />
+            <marker date="1509121130226" expanded="true" signature="59810:59871" ph="..." />
           </folding>
         </state>
       </provider>
