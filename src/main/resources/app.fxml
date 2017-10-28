@@ -1,41 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="300.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.View">
+<AnchorPane prefHeight="300.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Client">
    <children>
       <TabPane prefHeight="300.0" prefWidth="406.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Book Store">
                <content>
-                  <Pane prefHeight="200.0" prefWidth="200.0">
+                  <Pane prefHeight="214.0" prefWidth="406.0">
                      <children>
-                        <TextField fx:id="searchField" layoutX="153.0" layoutY="13.0" prefHeight="25.0" prefWidth="163.0" />
-                        <Button fx:id="goBtn" layoutX="316.0" layoutY="13.0" mnemonicParsing="false" onAction="#search" text="Go" />
-                        <Label layoutX="10.0" layoutY="13.0" text="Search: ">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7cc2ff" height="47.0" layoutX="4.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="397.0" />
+                        <TextField fx:id="searchField" layoutX="173.0" layoutY="13.0" prefHeight="25.0" prefWidth="163.0" />
+                        <Button fx:id="goBtn" layoutX="336.0" layoutY="13.0" mnemonicParsing="false" onAction="#search" text="Go" />
+                        <Label layoutX="34.0" layoutY="13.0" text="Search: ">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <ComboBox fx:id="searchType" layoutX="67.0" layoutY="13.0" prefHeight="25.0" prefWidth="86.0" />
-                        <Label layoutX="10.0" layoutY="45.0" text="Found:">
+                        <ComboBox fx:id="searchType" layoutX="87.0" layoutY="13.0" prefHeight="25.0" prefWidth="86.0" />
+                        <Label layoutX="13.0" layoutY="56.0" text="Found:">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <Label fx:id="countBook" layoutX="67.0" layoutY="45.0" text="0 Book">
+                        <Label fx:id="countBook" layoutX="70.0" layoutY="56.0" text="0 Book">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <TextArea fx:id="bookArea" editable="false" layoutX="14.0" layoutY="80.0" prefHeight="177.0" prefWidth="377.0">
+                        <TextArea fx:id="bookArea" editable="false" layoutX="14.0" layoutY="86.0" prefHeight="171.0" prefWidth="377.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </TextArea>
+                        <Button fx:id="allBtn" layoutX="367.0" layoutY="13.0" mnemonicParsing="false" onAction="#showAll" text="All" />
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="130.0" layoutY="58.0">
+                           <image>
+                              <Image url="@books.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView layoutX="8.0" layoutY="15.0">
+                           <image>
+                              <Image url="@search.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                </content>
@@ -44,50 +59,56 @@
                <content>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <TextField fx:id="nameBookText" layoutX="156.0" layoutY="41.0" prefHeight="25.0" prefWidth="163.0" />
-                        <Button fx:id="addBookBtn" layoutX="187.0" layoutY="161.0" mnemonicParsing="false" onAction="#addBook" text="Add" />
-                        <Label layoutX="84.0" layoutY="41.0" text="Name:">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7cc2ff" height="178.0" layoutX="73.0" layoutY="44.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="261.0" />
+                        <TextField fx:id="nameBookText" layoutX="156.0" layoutY="60.0" prefHeight="25.0" prefWidth="163.0" />
+                        <Button fx:id="addBookBtn" layoutX="184.0" layoutY="181.0" mnemonicParsing="false" onAction="#addBook" text="Add" />
+                        <Label layoutX="84.0" layoutY="60.0" text="Name:">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="84.0" layoutY="79.0" text="Amount:">
+                        <Label layoutX="84.0" layoutY="98.0" text="Amount:">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="amountBookText" layoutX="156.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" text="0" />
-                        <TextField fx:id="priceBookText" layoutX="156.0" layoutY="121.0" prefHeight="25.0" prefWidth="70.0" text="0.00" />
-                        <Label layoutX="84.0" layoutY="121.0" text="Price:">
+                        <TextField fx:id="amountBookText" layoutX="156.0" layoutY="98.0" prefHeight="25.0" prefWidth="70.0" text="0" />
+                        <TextField fx:id="priceBookText" layoutX="156.0" layoutY="140.0" prefHeight="25.0" prefWidth="70.0" text="0.00" />
+                        <Label layoutX="84.0" layoutY="140.0" text="Price:">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="236.0" layoutY="79.0" text="Book">
+                        <Label layoutX="236.0" layoutY="98.0" text="Book">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="237.0" layoutY="121.0" text="Baht">
+                        <Label layoutX="237.0" layoutY="140.0" text="Baht">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="83.0" layoutY="208.0" text="Status:">
+                        <Label layoutX="83.0" layoutY="227.0" text="Status:">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <Label fx:id="addStatus" layoutX="156.0" layoutY="208.0" text="name-Success">
+                        <Label fx:id="addStatus" layoutX="156.0" layoutY="227.0">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="138.0" layoutY="8.0" text="Add Book to Store">
+                        <Label layoutX="146.0" layoutY="9.0" text="Add Book to Store">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
+                        <ImageView layoutX="118.0" layoutY="8.0">
+                           <image>
+                              <Image url="@add-book.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                </content>

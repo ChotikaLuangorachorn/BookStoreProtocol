@@ -113,7 +113,6 @@ public class Server {
             int amount = Integer.parseInt(input[2]);
             float price = Float.parseFloat(input[3]);
             if (! name.equals("") && amount >=0 && price >=0){
-                System.out.println(name+","+amount+","+price);
                 boolean checkDuplicate = false;
                 for (Book b: books.getBooks()){
                     if (name.equals(b.getName().toLowerCase())){
