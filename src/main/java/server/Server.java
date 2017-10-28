@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class Server {
     public static void main(String[] args) {
-        Books books = new Books();
+        BooksDB books = new BooksDB();
         books.selectToDB();
         new Thread(() -> {
             ServerSocket serverSocket = null;
@@ -34,9 +34,9 @@ public class Server {
         private Socket socket;
         private DataInputStream inputFromClient;
         private DataOutputStream outputToClient;
-        private Books books;
+        private BooksDB books;
 
-        public HandleClient(Socket socket, Books books) {
+        public HandleClient(Socket socket, BooksDB books) {
             this.socket = socket;
             this.books = books;
         }
@@ -59,7 +59,6 @@ public class Server {
             } catch (IOException e) {
                 System.out.println("Client not Request");
             }
-
         }
         public void searchBook(String msg) throws IOException {
             String type ="";

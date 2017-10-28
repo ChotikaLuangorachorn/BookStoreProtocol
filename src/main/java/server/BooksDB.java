@@ -5,11 +5,11 @@ import java.sql.*;
 import java.util.ArrayList;
 
 
-public class Books {
+public class BooksDB {
     private ArrayList<Book> books;
     private String url = "bookstore.db";
 
-    public Books(){
+    public BooksDB(){
         books = new ArrayList<Book>();
     }
     public Connection connectionDB() throws ClassNotFoundException, SQLException {
